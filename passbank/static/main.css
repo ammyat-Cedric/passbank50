@@ -1,0 +1,21 @@
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.content-section {
+  outline: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+/* 
+form div{
+  display: inline-block;
+  width: auto;
+} */
+
+
+main {
+  text-align: center;
+}
+

@@ -1,4 +1,7 @@
 
 virtualenv/
+__pycache__/
 
+*.db
 requirements.txt
+passbank/__init__.py

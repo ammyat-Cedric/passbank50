@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  Add
+{% endblock title %}
+
+{% block content %}
+<h1>Add Website</h1>
+<hr class="mb-3">
+<div class="container d-flex flex-wrap justify-content-center">
+  <form action="{{ url_for('addWebsite') }}" method="POST" class="mb-3">
+    <small class="text-muted text-center mb-3">All fields must be provided!</small>
+    <input type="text" name="website" class="form-control form-control-lg mb-3" placeholder="Website" autocomplete="off" autofocus required>
+    <input type="url" name="url" class="form-control form-control-lg mb-3" placeholder="URL" autocomplete="off" autofocus required>
+    <input type="text" name="username" class="form-control form-control-lg mb-3" placeholder="Username" autocomplete="off" autofocus required>
+    <input type="password" name="password" class="form-control form-control-lg mb-3" placeholder="Password" autocomplete="off" autofocus required>
+    <input type="submit" value="Add Website" class="btn btn-primary mb-3">
+  </form>
+</div>
+
+<h1>Import CSV</h1>
+<hr class="mb-3">
+<div class="container d-flex flex-wrap justify-content-center">
+  <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data" class="mb-3">
+    <div class="mb-3">
+      <label class="form-label" for="customFile">Upload Your File with CSV format.</label>
+      <input type="file" class="form-control" id="customFile" name="file">
+    </div>
+    <input type="submit" value="Import" class="btn btn-primary mb-3">
+  </form>
+</div>
+{% endblock content %}

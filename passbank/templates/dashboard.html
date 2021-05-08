@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  Dashboard
+{% endblock title %}
+
+{% block content %}
+  <h1>Dashboard</h1>
+
+  <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <th scope="col">Website</th>
+        <th scope="col">Username</th>
+        <th scope="col">Password</th>
+      </thead>
+
+      <tbody style="text-align: left; text-decoration: none;">
+        {% for password in passwords %}
+        <tr>
+          <td>
+            <input type="checkbox" name="update">
+            <a href="{{ password.url }}">{{ password.website }}</a>
+          </td>
+          <td>{{ password.username }}</td>
+          <td>{{ password.password }}</td>
+        </tr> 
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+{% endblock content %}
