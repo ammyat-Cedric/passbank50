@@ -16,6 +16,16 @@ form div{
 
 
 main {
+  overflow-x: auto;
   text-align: center;
 }
 
+table {
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+table th,
+table td {
+  vertical-align: middle;
+}

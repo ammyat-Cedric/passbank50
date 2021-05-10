@@ -50,3 +50,19 @@ class UpdateAccountForm(Form):
       if user:
         raise ValidationError('That email is already existed!')
 
+class ResetForm(Form):
+  email = StringField('Enter your e-mail', validators=[validators.input_required(), Email()])
+  submit = SubmitField('Request Password Reset')
+
+  def validate_email(self, email):
+    user = Users.query.filter_by(email=email.data).first()
+    if user is None:
+      raise ValidationError("User account doesn't exit. You must register first!")
+
+class ResetPasswordForm(Form):
+  password = PasswordField('New Password', validators=[
+                           validators.input_required()])
+  confirm_password = PasswordField('Comfirm New Password', validators=[
+                                   validators.input_required(), validators.EqualTo('password')])
+  
+  submit = SubmitField('Reset Password')

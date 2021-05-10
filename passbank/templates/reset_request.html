@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Request Reset Form
+{% endblock title %}
+
+{% block content %}
+<h1 class="h1 text-center">Reset Password</h1>
+<hr class="mb-3">
+<div class="container d-flex flex-wrap justify-content-center">
+  <form action="" , method="POST">
+
+    <div class="form-group mb-3">
+      {{ form.email.label(class="form-control-label")}}
+
+      {% if form.email.errors %}
+      {{ form.email(class="form-control form-control-lg is-invalid")}}
+      <div class="invalid-feedback">
+        {% for error in form.email.errors %}
+        <span>{{ error }}</span>
+        {% endfor %}
+      </div>
+      {% else %}
+      {{ form.email(class="form-control form-control-lg")}}
+      {% endif %}
+    </div>
+
+    <div class="form-group mb-3">
+      {{ form.submit(class="btn btn-primary")}}
+    </div>
+  </form>
+</div>
+{% endblock content %}
