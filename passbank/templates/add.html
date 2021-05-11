@@ -10,8 +10,8 @@
 <div class="container d-flex flex-wrap justify-content-center">
   <form action="{{ url_for('addWebsite') }}" method="POST" class="mb-3">
     <small class="text-muted text-center mb-3">All fields must be provided!</small>
-    <input type="text" name="website" class="form-control form-control-lg mb-3" placeholder="Website" autocomplete="off" autofocus required>
-    <input type="url" name="url" class="form-control form-control-lg mb-3" placeholder="URL" autocomplete="off" autofocus required>
+    <input type="text" name="website" class="form-control form-control-lg mb-3" placeholder="Website (www.google.com)" autocomplete="off" autofocus required>
+    <input type="url" name="url" class="form-control form-control-lg mb-3" placeholder="URL (https://www.google.com)" autocomplete="off" autofocus required>
     <input type="text" name="username" class="form-control form-control-lg mb-3" placeholder="Username" autocomplete="off" autofocus required>
     <input type="password" name="password" class="form-control form-control-lg mb-3" placeholder="Password" autocomplete="off" autofocus required>
     <input type="submit" value="Add Website" class="btn btn-primary mb-3">
@@ -27,33 +27,14 @@
       <input type="file" class="form-control" id="customFile" name="file">
     </div>
     <input type="submit" value="Import" class="btn btn-primary mb-3">
+
+    <div>
+      <p>Need help? You can view how to export your passwords <a
+          href="https://www.howtogeek.com/715223/how-to-export-and-delete-saved-passwords-in-chrome/">HERE</a>!
+      </p>
+    </div>
   </form>
-</div>
 
-<h1>Generate Password</h1>
-<hr class="mb-3">
-<div id="random-password" class="container d-flex flex-wrap justify-content-center">
-  <!-- <div class="form-group">
-    <input type="text" id="password" class="form-control form-control-lg" style="text-align: center;">
-    <button id="copy" class="btn btn-secondary">Copy</button>
-  </div>
   
-   -->
-  <div id="setting">
-    <div class="form-group">
-      <label for="length">Password Length</label>
-      <input type="number" id="length" value="16" min="8" max="64" class="form-control form-control-lg">  
-    </div>
-
-    <div class="form-group">
-      <input type="checkbox" id="numbers" checked>
-      <label for="numbers">Include Numbers</label>
-    </div>
-
-    <div class="form-group">
-      <input type="checkbox" id="symbols" checked>
-      <label for="symbols">Include Symbols</label>
-    </div>
-  </div>
 </div>
 {% endblock content %}

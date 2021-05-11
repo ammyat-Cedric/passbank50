@@ -14,7 +14,7 @@
         <th scope="col">Username</th>
         <th scope="col">Password</th>
       </thead>
-
+      
       <tbody style="text-align: left; text-decoration: none;">
         {% for password in passwords %}
         <tr>
@@ -23,8 +23,8 @@
           </td>
           <td>{{ password.username }}</td>
           <td>{{ password.password }}</td>
-        </tr> 
-        {% endfor %}
+        </tr>
+        {% endfor %}        
       </tbody>
     </table>
   </div>

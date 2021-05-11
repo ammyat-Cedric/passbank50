@@ -39,4 +39,4 @@ class Password(db.Model):
   owner_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
   def __repr__(self):
-    return f"Password('{self.username}', '{self.date_added}'"
+    return f"Password('{self.website}', '{self.username}'"

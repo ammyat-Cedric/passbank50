@@ -14,7 +14,8 @@ from passbank.forms import RegisterationForm, LoginForm, UpdateAccountForm, Rese
 @login_required
 def dashboard():
   passwords = Password.query.filter_by(owner = current_user)
-  return render_template("dashboard.html", passwords=passwords)
+  has_items = bool(passwords)
+  return render_template("dashboard.html", passwords=passwords, has_items=has_items)
 
 
 @app.route('/add', methods=['GET', 'POST'])
