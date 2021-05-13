@@ -149,7 +149,11 @@ def account():
 
 def send_reset_email(user):
   token = user.get_reset_token()
-  body = f'''To reset your password, visit the following link: {url_for('reset_token', token=token, _external=True)}
+  body = f'''To reset your password, visit the following link: 
+  
+{url_for('reset_token', token=token, _external=True)}
+
+Caution: After 30 minutes, this link will be invalid.
 
 If you did not make this request then simply ignore this email and no change will be made!!
 '''
