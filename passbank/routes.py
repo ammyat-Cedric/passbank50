@@ -95,6 +95,9 @@ def login():
       next_page = request.args.get('next')
       flash('You have successfully logged in.', 'success')
       return redirect(next_page) if next_page else redirect(url_for("dashboard"))
+    elif not user:
+      flash('There is no user account with this email.')
+      return redirect(url_for('register'))
     else:
       flash('Email or password is incorrect.', 'danger')
       return redirect(url_for("login"))
