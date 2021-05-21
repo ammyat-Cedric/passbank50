@@ -4,7 +4,7 @@
 
 ## Welcome to PassBank50
 
-### Video Demo: <TODO>
+### Video Demo: https://youtu.be/GJp96KA49zw
   
 ### Description
   PassBank50 is a project that manages websites and passwords for you. It provides users to stores passwords and import passwords in `csv` format.
