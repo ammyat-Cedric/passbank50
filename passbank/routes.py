@@ -30,9 +30,8 @@ def addWebsite():
     url = request.form.get('url')
     username = request.form.get('username')
     password = request.form.get('password')
-    h_password = generate_password_hash(password, method='pbkdf2:sha256', salt_length=8)
 
-    add_password = Password(website=website, url=url, username=username, password=h_password, owner=current_user)
+    add_password = Password(website=website, url=url, username=username, password=password, owner=current_user)
     db.session.add(add_password)
     db.session.commit()
     flash('Successfully added!', 'success')
