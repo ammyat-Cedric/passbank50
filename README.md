@@ -7,12 +7,16 @@
 ### Video Demo: https://youtu.be/GJp96KA49zw
   
 ### Description
-  PassBank50 is a project that manages websites and passwords for you. It provides users to stores passwords and import passwords in `csv` format.
+This is my final project for [Harvard's CS50x](https://cs50.harvard.edu/x/2021/) course. It is a website named `PassBank50` in order to provide the minimal functionalities like a password manager. Everyone can use the feature with just creating a user account for yourself. 
+
+  PassBank50 is a project that manages websites and passwords for you. Every user have to create an associated account for self and it can be managed by their own. The user can also be updated their information such as changing username or password or resetting password. The main feature of the program is to store the login username and password for any websites. It can be added individually or import from the csv files. These added information can be view from their dashboard.
   
-
-### Platform
-- Web App
-
+  The program can be run with only one command from your terminal. Make sure you are in the `passbank50` directory and just type the following command.
+```bash
+$ python run.py 
+```
+ The only icon used in my project is "the three-finger salute" originated from `Hunger Game`. 
+> It is the honor for **our heroes** who sacrificed their lives during `Burma Spring Revolution` against the military coup. 
 
 ### Features
 - User account registration
