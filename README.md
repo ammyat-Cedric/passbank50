@@ -52,6 +52,18 @@
 - On submitting, a mail will be sent with the password reset link via the provided email.
 - Copy and paste the link in browser, change the password and now you can log in with the new password again.
 
+### Account Management
+![Account](https://user-images.githubusercontent.com/60486163/119164983-01e1f600-ba83-11eb-86b8-e41dc7c2c391.png)
 
+- Under `Account` tab, it is provided with the current user information and to update these information.
+- Each user can be changed either one or all of the info like username, email or password by giving the current password. 
+- With a successful change, the infomation will be updated with the new ones. 
+
+### Add & Import 
+![Add & Import](https://user-images.githubusercontent.com/60486163/119168273-c0ebe080-ba86-11eb-8ea5-bdf5e569226b.png)
+- The user can add websites and passwords individually or import with the exported `csv` file. 
+
+### Dashboard
+- The dashboard shows all the added websites and passwords for the current current. 
 
 
