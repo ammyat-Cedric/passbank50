@@ -16,7 +16,7 @@ This is my final project for [Harvard's CS50x](https://cs50.harvard.edu/x/2021/)
 $ python run.py 
 ```
  The only icon used in my project is "the three-finger salute" originated from `Hunger Game`. 
-> It is the honor for **our heroes** who sacrificed their lives during `Burma Spring Revolution` against the military coup. 
+> It is the honor for **OUR HEROES** who sacrificed their lives during `Burma Spring Revolution` against the military coup. 
 
 ### Features
 - User account registration
